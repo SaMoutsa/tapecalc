@@ -23,3 +23,5 @@ https://samoutsa.github.io/tapecalc/
 ## Tech
 
 Built with plain HTML, CSS, and JavaScript.
+
+## Made with ❤️ in Greece.
