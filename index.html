@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TapeCalc — Calculator με ιστορικό</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="device">
+
+  <div class="device-header">
+    <span class="device-name">TapeCalc</span>
+    <button class="tape-clear" id="tape-clear" title="Καθάρισε το tape">καθαρισμός tape</button>
+  </div>
+
+  <!-- ιστορικό σαν παλιά ταινία αριθμομηχανής -->
+  <div class="tape" id="tape">
+    <p class="tape-empty" id="tape-empty">Οι υπολογισμοί σου θα εμφανίζονται εδώ σαν ταινία αριθμομηχανής.</p>
+  </div>
+
+  <div class="lcd">
+    <div class="lcd-expression" id="lcd-expression">&nbsp;</div>
+    <div class="lcd-main" id="lcd-main">0</div>
+  </div>
+
+  <div class="keypad" id="keypad">
+    <button class="key key-fn" data-action="clear">AC</button>
+    <button class="key key-fn" data-action="paren-open">(</button>
+    <button class="key key-fn" data-action="paren-close">)</button>
+    <button class="key key-fn" data-action="backspace">DEL</button>
+
+    <button class="key key-num" data-num="7">7</button>
+    <button class="key key-num" data-num="8">8</button>
+    <button class="key key-num" data-num="9">9</button>
+    <button class="key key-op" data-op="/">÷</button>
+
+    <button class="key key-num" data-num="4">4</button>
+    <button class="key key-num" data-num="5">5</button>
+    <button class="key key-num" data-num="6">6</button>
+    <button class="key key-op" data-op="*">×</button>
+
+    <button class="key key-num" data-num="1">1</button>
+    <button class="key key-num" data-num="2">2</button>
+    <button class="key key-num" data-num="3">3</button>
+    <button class="key key-op" data-op="-">−</button>
+
+    <button class="key key-num" data-num="0">0</button>
+    <button class="key key-num" data-action="decimal">.</button>
+    <button class="key key-fn" data-action="percent">%</button>
+    <button class="key key-op" data-op="+">+</button>
+
+    <button class="key key-equals" data-action="equals">=</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
